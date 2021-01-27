@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  review:
+
+  proxy:
+    build: EricProxyServer/
+    depends_on:
+      - 'database'
+    ports:
+      - '3005:3005'
